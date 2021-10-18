@@ -1,0 +1,219 @@
+@import "reset1.css";
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.all {
+    width: 340px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+    height: 100px;
+    background-color: #ffce33;
+
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+.header__row{
+    margin-top: 30px;
+}
+.header__row:nth-child(2) {
+    font-size: 18px;
+    font-weight: 600;
+}
+#searchtop {
+    display: flex;
+    justify-content: center;
+}
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    height: 50px;
+    position: absolute;
+    background-color: white;
+    top: 70px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.15);
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+input:focus {
+	outline: none;
+}
+input::placeholder {
+    font-size: 15px;
+    color: rgb(0, 0, 0, 0.15);
+}
+.search__icon {
+    color: rgb(0, 0, 0, 0.1);;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 20px;
+}
+.main-bookoftheday__title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.main-bookoftheday__contents {
+    display: flex;
+}
+.main-bookoftheday__contents__img>img {
+    width: 100px;
+    height: 160px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+.main-bookoftheday__contents__contents__1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.main-bookoftheday__contents__contents__2 {
+    color:rgb(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+}
+#star {
+    display: flex;
+    align-content: center;
+    margin-bottom: 10px;
+}
+.main-bookoftheday__contents__contents__star:last-child {
+    color:rgb(0, 0, 0, 0.1);
+    margin-left: 5px;
+}
+.main-bookoftheday__contents__contents__star:first-child{
+    color: #ffce33;
+}
+.main-bookoftheday__contents__contents__ex{
+    display: flex;
+    align-content: center;
+}
+#Journey{
+    width: 70px;
+    height: 25px;
+    background-color: rgb(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 12px;
+    margin: 5px 5px 0px 0px;
+    line-height: 22px;
+    border-radius: 4px;
+}
+#Biography {
+    width: 80px;
+    height: 25px;
+    background-color: rgb(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 12px;
+    margin: 5px 5px 0px 0px;
+    line-height: 22px;
+    border-radius: 4px;
+}
+.main-bookoftheday__contents__contents__book {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+#bookmark {
+    background-color: #ffce33;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 35px;
+}
+#booknow {
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    color: rgb(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 13px;
+    line-height: 27px;
+}
+.main-topadventures {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.main-topadventures__contents__img>img {
+    width: 70px;
+    height: 110px;
+    border-radius: 6px;
+}
+.main-topadventures__contents {
+    margin-top: 20px;
+    overflow-x: scroll;
+    display: flex;
+    height: 140px;
+
+}
+.main-topadventures__contents__book {
+    margin-right: 25px;    
+}
+.main-topadventures__contents__star {
+    display: flex;
+    font-size: 1%;
+    margin: 0px;
+    transform: scale(0.8);
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.main-popularauthors-text {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.main-popularauthors__img>img {
+    width: 100px;
+    height: 130px;
+    border-radius: 10px;
+}
+.main-popularauthors {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.main-popularauthors__text{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 20px;
+}
+.main-popularauthors__text__name{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.main-popularauthors__text__writer{
+    font-size: 13px;
+    margin-top: 10px;
+    line-height: 16px;
+    color: rgb(0, 0, 0, 0.3);
+}
